@@ -51,7 +51,7 @@ a:hover {
 
 .sub-block {
     border: 2px solid green;
-    width: 100px;
+    flex-grow: 1;
 }
 
 .one {
@@ -68,4 +68,9 @@ a:hover {
 
 .four {
     background: white;
+}
+
+.center {
+    flex-grow: 2;
+    min-width: 500px;
 }
