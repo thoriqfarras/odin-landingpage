@@ -52,6 +52,7 @@ a:hover {
 .sub-block {
     border: 2px solid green;
     flex-grow: 1;
+    display: flex;
 }
 
 .one {
@@ -71,6 +72,21 @@ a:hover {
 }
 
 .center {
-    flex-grow: 2;
-    min-width: 500px;
+    flex-grow: 3;
+    min-width: 850px;
 }
+
+.card {
+    border: 1px solid yellow;
+    flex: 1;
+    display: flex;
+}
+
+.card.one {
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 76px;
+    padding-left: 12px;
+}
+
