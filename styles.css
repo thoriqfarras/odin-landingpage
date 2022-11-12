@@ -3,23 +3,42 @@ html, body {
     padding: 0;
 }
 
+body {
+    background: #eeeeee;
+}
+
 .header {
-    background: maroon;
+    background: #eeeeee;
+}
+
+.header .container {
     display: flex;
     justify-content: space-between;
-    padding: 24px;
     height: 50px;
+    width: 60%;
+    margin: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .logo {
     font-size: 24px;
-    color: white;
+    color: maroon;
     display: flex;
     align-items: center;
+    padding-right: 10px;
+    border-bottom: 1px solid black;
+}
+
+.line {
+    width: 80%;
+    margin-top: 10px;
+    border: 1px solid maroon;
 }
 
 nav {
     display: flex;
+    border-bottom: 1px solid darkslategray;
 }
 
 nav a {
@@ -28,7 +47,7 @@ nav a {
     justify-content: center;
     align-items: center;
 
-    color: white;
+    color: black;
     text-decoration: none;
     margin-left: 16px;
     text-align: center;
@@ -39,7 +58,6 @@ a:hover {
 }
 
 .main {
-    border: 2px solid black;
     background:rgb(233, 233, 233);
 }
 
@@ -49,44 +67,75 @@ a:hover {
     height: 500px;
 }
 
-.sub-block {
-    border: 2px solid green;
-    flex-grow: 1;
+.block.one, .block.three {
+    background: #eeeeee;
+}
+
+.block.two, .block-four {
+    background: #dddddd;
+}
+
+.hero {
+    margin: 0;
+    width: 60%;
+    border: 2px solid pink;
     display: flex;
 }
 
-.one {
-    background: maroon;
-}
-
-.two {
-    background: white;
-}
-
-.three {
-    background: lightgray;
-}
-
-.four {
-    background: white;
-}
-
-.center {
-    flex-grow: 3;
-    min-width: 850px;
-}
-
-.card {
+.left, .right {
     border: 1px solid yellow;
-    flex: 1;
+    width: 50%;
     display: flex;
 }
 
-.card.one {
+.block.one .hero .left {
+    color: white;
     flex-direction: column;
     justify-content: center;
-    color: white;
-    font-size: 76px;
-    padding-left: 12px;
 }
 
+.block.one .hero .right {
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    margin: 0;
+}
+
+.block.one .hero .left .main-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 92px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.block.one .hero .left .secondary-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: darkslategray;
+    width: 60%;
+}
+
+.img-placeholder {
+    background: gray;
+}
+
+.block.one .hero .right .img-placeholder {
+    width: 500px;
+    height: 300px;
+    box-shadow: 20px 20px 50px grey;
+}
+
+.block.two .hero .left, .block.three .hero .right {
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.block.two .hero .left .card, .block.three .hero .right .card {
+    width: 40%;
+    height: 22.5%;
+    background: gray;
+}
