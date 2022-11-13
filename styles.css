@@ -228,3 +228,18 @@ form {
     border: 0px;
     font-size: 18px;
 }
+
+.footer {
+    background: #dddddd;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 60%;
+    margin: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
