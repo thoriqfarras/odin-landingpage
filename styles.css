@@ -27,7 +27,7 @@ body {
     display: flex;
     align-items: center;
     padding-right: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 
 .line {
@@ -38,7 +38,7 @@ body {
 
 nav {
     display: flex;
-    border-bottom: 1px solid darkslategray;
+    border-bottom: 2px solid black;
 }
 
 nav a {
@@ -83,6 +83,7 @@ a:hover {
 }
 
 .left, .right {
+    font-family: 'Times New Roman', Times, serif;
     border: 1px solid yellow;
     width: 50%;
     display: flex;
@@ -103,17 +104,18 @@ p {
     margin: 0;
 }
 
+.secondary-text {
+    color: darkslategray;
+}
+
 .block.one .hero .left .main-text {
-    font-family: 'Times New Roman', Times, serif;
     font-size: 92px;
     color: black;
     margin-bottom: 10px;
 }
 
 .block.one .hero .left .secondary-text {
-    font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
-    color: darkslategray;
     width: 60%;
 }
 
@@ -129,7 +131,7 @@ p {
 
 .block.two .hero .left, .block.three .hero .right {
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -137,6 +139,54 @@ p {
 
 .block.two .hero .left .card, .block.three .hero .right .card {
     width: 40%;
-    height: 25%;
-    background: gray;
+    height: 30%;
+}
+
+.block.two .hero .left .card .img-placeholder, .block.three .hero .right .card .img-placeholder {
+    width: 90%;
+    height: 80%;
+}
+
+.block.two .hero .left .card .img-placeholder {
+    box-shadow: -20px 20px 40px grey;
+}
+
+.block.three .hero .right .card .img-placeholder {
+    box-shadow: 20px 20px 40px grey;
+}
+
+.block.two .hero .right, .block.three .hero .left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.block.two .hero .right .title, .block.three .hero .left .title {
+    font-size: 36px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid maroon;
+}
+
+.block.two .hero .right .secondary-text, .block.three .hero .left .secondary-text {
+    font-size: 18px;
+    width: 80%;
+}
+
+
+.img-subtext {
+    font-style: italic;
+}
+
+.img-supertext {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(167, 167, 167);
+}
+
+.quote {
+    font-style: italic;
+    color: gray;
+    font-size: 28px;
+    width: 80%;
 }
