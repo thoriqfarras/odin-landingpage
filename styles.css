@@ -244,7 +244,11 @@ form {
     padding-bottom: 24px;
 }
 
-.block.two .hero .left .img-placeholder img {
+.block.two .hero .left .img-placeholder img, .block.three .hero .right .img-placeholder img {
     height: 100%;
     width: 100%;
+}
+
+.block.three .hero .right .card {
+    margin-bottom: 10px;
 }
