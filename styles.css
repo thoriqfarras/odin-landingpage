@@ -243,3 +243,8 @@ form {
     padding-top: 24px;
     padding-bottom: 24px;
 }
+
+.block.two .hero .left .img-placeholder img {
+    height: 100%;
+    width: 100%;
+}
